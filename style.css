@@ -1,0 +1,84 @@
+* {
+  background-color: antiquewhite;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 35px;
+  margin-top: 0px;
+  height: 800px;
+}
+
+.header h1 {
+  margin-top: 200px;
+}
+
+.name {
+  position: absolute;
+  top: 70%;
+  left: 80%;
+}
+
+.headsub {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+div {
+  opacity: 0;
+  transition: transform 4s 0.25s, opacity 0.3s 0.25s ease-out;
+  will-change: transform, opacity;
+}
+
+div.is-visible {
+  opacity: 1;
+}
+
+.edward {
+  display: flex;
+  flex-wrap: wrap;
+  height: 750px;
+  justify-content: center;
+}
+
+.hopper {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  padding-bottom: 300px;
+}
+.hopper h2 {
+  font-size: 75px;
+  padding-bottom: 2%;
+  width: 50%;
+  margin-top: 0%;
+}
+
+.hopper h3 {
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.edward img {
+  height: 80%;
+}
+
+.edward p {
+  font-size: 28px;
+  position: absolute;
+  top: 600px;
+  left: 236px;
+  background-color: white;
+  padding: 1%;
+}
+
+.edward p::first-line {
+  font-weight: bold;
+}
