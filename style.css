@@ -1,31 +1,6 @@
-* {
+body {
   background-color: antiquewhite;
-}
-.header {
-  display: flex;
-  justify-content: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 35px;
-  margin-top: 0px;
-  height: 800px;
-}
-
-.header h1 {
-  margin-top: 200px;
-}
-
-.name {
-  position: absolute;
-  top: 70%;
-  left: 80%;
-}
-
-.headsub {
-  position: absolute;
-  top: 5%;
-  left: 1%;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+  margin: 0%;
 }
 
 div {
@@ -38,47 +13,262 @@ div.is-visible {
   opacity: 1;
 }
 
-.edward {
+.header {
   display: flex;
-  flex-wrap: wrap;
-  height: 750px;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 35px;
+  margin-top: 0px;
+  height: 800px;
+  background-image: url("iris.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header p {
+  margin: 0%;
+}
+
+.header h1 {
+  color: black;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
+
+.monet {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  font-size: 20px;
+  color: white;
+  text-decoration: antiquewhite;
+}
+
+.name {
+  position: absolute;
+  top: 3%;
+  left: 90%;
+}
+
+.headsub {
+  position: absolute;
+  top: 68%;
+  left: 0%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
+  height: 800px;
+}
+
+.intro h1 {
+  height: 100px;
+  margin: 0px;
+  font-size: 52px;
+}
+
+.intro h3 {
+  margin: 8px;
+  width: 80%;
+  margin-bottom: 10%;
+}
+
+.intro1 {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  align-items: flex-end;
   justify-content: center;
 }
 
-.hopper {
+.intro1pic {
+  width: 50%;
+  margin: 1%;
+}
+
+.intro1pic img {
+  max-width: 100%;
+}
+
+.intro1 p {
+  width: 10%;
+  margin: 1%;
+  padding: 1%;
+  background-color: white;
+}
+
+.intro p::first-line {
+  font-weight: bold;
+}
+
+.artist {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
-.hopper h2 {
+
+.artist h2 {
   font-size: 75px;
   padding-bottom: 2%;
   width: 50%;
   margin-top: 0%;
 }
 
-.hopper h3 {
-  width: 50%;
+.artist h3 {
+  width: 40%;
   position: absolute;
   top: 15%;
   left: 10%;
+  text-align: justify;
 }
 
-.edward img {
-  height: 80%;
+.painting {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.edward p {
-  font-size: 28px;
-  position: absolute;
-  top: 600px;
-  left: 236px;
+.paintingtag {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.paintingtag img {
+  width: 60%;
+}
+
+.paintingtag p {
+  font-size: 20px;
+  position: relative;
+  top: 1px;
   background-color: white;
   padding: 1%;
+  margin: 1%;
 }
 
-.edward p::first-line {
+.paintingtag p::first-line {
   font-weight: bold;
+}
+
+.painting h2 {
+  width: 85%;
+  justify-content: center;
+  top: 75%;
+  left: 4%;
+  text-align: justify;
+}
+
+.museum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 750px;
+}
+
+.museumpic {
+  width: 50%;
+  margin: 2%;
+}
+
+.museumpic img {
+  max-width: 100%;
+}
+
+.museumdesc {
+  width: 40%;
+  margin: 2%;
+}
+
+#myImg {
+  cursor: zoom-in;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.9;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 50px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 80%;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
