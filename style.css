@@ -1,5 +1,10 @@
+* {
+  font-family: "Chivo", sans-serif;
+  color: #17252a;
+}
+
 body {
-  background-color: antiquewhite;
+  background-color: #3aafa9;
   margin: 0%;
 }
 
@@ -16,13 +21,9 @@ div.is-visible {
 .header {
   display: flex;
   justify-content: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 35px;
   margin-top: 0px;
   height: 800px;
-  background-image: url("iris.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .header p {
@@ -30,10 +31,17 @@ div.is-visible {
 }
 
 .header h1 {
-  color: black;
+  color: #feffff;
+  font-weight: 700;
   position: absolute;
-  top: 10%;
-  left: 2%;
+  top: 30%;
+  left: 55%;
+  text-align: right;
+}
+
+.header h5 {
+  position: absolute;
+  top: 94%;
 }
 
 .monet {
@@ -49,14 +57,22 @@ div.is-visible {
   position: absolute;
   top: 3%;
   left: 90%;
+  color: #17252a;
 }
 
 .headsub {
   position: absolute;
-  top: 68%;
-  left: 0%;
+  top: 10%;
+  left: 5%;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  color: #17252a;
+}
+
+#arrow {
+  position: fixed;
+  top: 80%;
+  font-size: 100px;
 }
 
 .intro {
@@ -81,12 +97,57 @@ div.is-visible {
   margin-bottom: 3%;
 }
 
-.intro1 {
+.x {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.x h2 {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  color: #feffff;
+}
+
+.intro2 {
   display: flex;
   flex-direction: row;
   margin: 1%;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+
+.intro2pic {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  justify-content: space-around;
+  border-radius: 50%;
+}
+
+.intro2pic {
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.intro2pic:hover {
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+#edward,
+#shoes {
+  height: 100%;
+  width: auto;
+}
+
+#plum {
+  width: 100%;
+  height: auto;
+  margin-top: -60px;
 }
 
 .intro1pic {
@@ -113,7 +174,10 @@ div.is-visible {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
+  background-color: #2b7a78;
+  padding-top: 100px;
+  color: #def2f1;
 }
 
 .artist h2 {
@@ -121,12 +185,13 @@ div.is-visible {
   padding-bottom: 2%;
   width: 50%;
   margin-top: 0%;
+  color: #feffff;
 }
 
 .artist h3 {
   width: 40%;
   position: absolute;
-  top: 15%;
+  top: 28%;
   left: 10%;
   text-align: justify;
 }
@@ -154,7 +219,7 @@ div.is-visible {
   font-size: 20px;
   position: relative;
   top: 1px;
-  background-color: white;
+  background-color: #def2f1;
   padding: 1%;
   margin: 1%;
 }
@@ -175,7 +240,9 @@ div.is-visible {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 750px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #17252a;
 }
 
 .museumpic {
@@ -190,6 +257,12 @@ div.is-visible {
 .museumdesc {
   width: 40%;
   margin: 2%;
+}
+
+.museumdesc h3,
+i {
+  text-align: justify;
+  color: #feffff;
 }
 
 #myImg {
