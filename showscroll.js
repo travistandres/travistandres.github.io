@@ -26,10 +26,10 @@ function isElementInViewport(el) {
   }
   var rect = el.getBoundingClientRect();
   return ( 
-   (rect.right <= (window.innerWidth || document.documentElement.clientWidth) && 
+    (rect.right <= (window.innerWidth || document.documentElement.clientWidth) && 
     rect.bottom <= (window.innerWidth || document.documentElement.clientWidth) && 
     rect.left <=   (window.innerWidth || document.documentElement.clientWidth) && 
-    rect.top >= -10
+    rect.top <= (window.innerWidth || document.documentElement.clientWidth)
   ));
 }
 
