@@ -19,7 +19,7 @@ div.is-visible {
 }
 
 .parallax {
-  min-height: 700px;
+  min-height: 900px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,12 +28,21 @@ div.is-visible {
 }
 
 .parallax1 {
-  min-height: 700px;
+  min-height: 900px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("wheatfield.jpg");
+  background-image: url("starrynight.jpg");
+}
+
+.parallax2 {
+  min-height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("landscape.jpg");
 }
 
 .header {
@@ -206,7 +215,7 @@ div.is-visible {
 }
 
 .artist h3 {
-  width: 40%;
+  width: 45%;
   position: absolute;
   top: 28%;
   left: 10%;
@@ -220,8 +229,15 @@ div.is-visible {
 
 #align {
   position: absolute;
-  left: 2%;
-  width: 52%;
+  left: 1%;
+  width: 60%;
+}
+
+#align1 {
+  position: absolute;
+  top: 38%;
+  left: 1%;
+  width: 60%;
 }
 
 .painting {
@@ -278,17 +294,25 @@ div.is-visible {
 }
 
 .museumpic {
+  display: flex;
   width: 50%;
-  margin: 2%;
+
   padding-top: 50px;
   padding-bottom: 50px;
+  justify-content: center;
 }
 
 .museumpic img {
   max-width: 100%;
 }
 
+#moma {
+  height: 700px;
+}
+
 .museumdesc {
+  display: flex;
+  justify-content: center;
   width: 42%;
   margin: 2%;
 }
@@ -297,6 +321,7 @@ div.is-visible {
 i {
   text-align: justify;
   color: #feffff;
+  margin: 0px;
 }
 
 #myImg {
@@ -306,6 +331,30 @@ i {
 
 #myImg:hover {
   opacity: 0.9;
+}
+
+.closing {
+  height: 700px;
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+}
+
+.closing h2 {
+  color: #feffff;
+  font-size: 72px;
+  margin-top: 0%;
+}
+
+.closing a {
+  color: #feffff;
+  text-decoration: none;
+  font-size: 34px;
+  transition-duration: 0.3s;
+}
+
+.closing a:hover {
+  color: #17252a;
 }
 
 .modal {
