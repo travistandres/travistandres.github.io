@@ -253,7 +253,7 @@ div.is-visible {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-end;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px 20px 0px;
 }
 
 .paintingtag img {
@@ -337,24 +337,56 @@ i {
   height: 700px;
   display: flex;
   padding: 5%;
-  flex-direction: column;
-}
-
-.closing h2 {
-  color: #feffff;
-  font-size: 72px;
-  margin-top: 0%;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .closing a {
-  color: #feffff;
+  font-size: 50px;
   text-decoration: none;
-  font-size: 34px;
+  color: #17252a;
   transition-duration: 0.3s;
 }
 
-.closing a:hover {
+.closing1 {
+  flex-direction: column;
+  width: 80%;
+}
+
+.closing1 h2 {
+  color: #feffff;
+  font-size: 72px;
+  margin-top: 0%;
+  padding-top: 350px;
+}
+
+.closing1 a {
+  color: #feffff;
+  text-decoration: none;
+  font-size: 30px;
+  transition-duration: 0.3s;
+}
+
+.closing1 a:hover {
   color: #17252a;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  width: 150px;
+  height: 150px;
+}
+
+.top:hover {
+  background-color: #17252a;
+  color: #feffff;
+}
+
+#arrowup {
+  font-size: 100%;
 }
 
 .modal {
